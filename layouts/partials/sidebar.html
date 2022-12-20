@@ -1,0 +1,48 @@
+<!--<aside>-->
+    <nav>
+        <a href="/">
+            <h1>{{ .Site.Title }}</h1>
+        </a>
+        <a class="menu-toggle" id="open-menu">
+            <h5>menu</h3>
+        </a>
+        {{ with .Site.Params.shortBio }}
+            <p class="short-bio">{{ . }}</p>
+        {{end}}
+        {{ with .Site.Menus }}
+            <hr>
+            <ul class="menu-section">
+                {{ range .main }}
+                <li>
+                    <a href="{{ .URL }}">
+                        <span> {{.Name}}</span>
+                    </a>
+                </li>
+                {{end}}
+            </ul>
+            {{ with .projects }}
+            <ul class="menu-section">
+                {{ range . }}
+                <li>
+                    <a href="{{ .URL }}">
+                        <span> {{.Name}}</span>
+                    </a>
+                </li>
+                {{end}}
+            </ul>
+        {{end}}
+            {{ with .socials }}
+            <ul class="menu-section">
+                {{ range . }}
+                <li>
+                    <a href="{{ .URL }}">
+                        <span> {{.Name}}</span>
+                    </a>
+                </li>
+            </ul>
+        {{end}}
+        {{end}}
+        {{end}}
+
+    </nav>
+<!--</aside>-->

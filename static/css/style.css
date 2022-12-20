@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Use my custom local fonts please */
+
+Access-Control-Allow-Origin : *;
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf') format("truetype-variations");
+    font-weight: 1 999;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf') format("truetype-variations");
+    font-weight: 1 999;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	padding-top: 5px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS RESET */
+html,body{
+    margin:0;
+    height:100%;
+    background-color:#fafafa;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color:#000000;
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+    font-size:2em;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size:1.17em;
+}
+h4{
+    font-size:1em;
+}
+h5{
+    font-size:0.83em;
+}
+
+.container{
+	position:relative;
+	width:60%;
+	height:50px;
+	left:350px;
+}
+.container .img-description{
+	position: absolute;
+	margin-bottom:100px;
+	opacity: 0;
+	color:#fff;
+}
+.img-description-content{
+	padding:20px;
+	color:#fff;
+}
+.img-description-content *{
+	color:#fff;
+	/*font-family: 'Montserrat', sans-serif;*/
+}
+.container .img-description:hover{
+	opacity: 1;
+	background-color: rgba(0,0,0,0.5);
+	transition:background-color 500ms;
+	margin-top: 20px;
+}
+
+.container img{
+	position: absolute;
+	margin-bottom: 100px;
+	opacity: 1;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Nav Styling*/
+nav{
+	width:300px;
+	position:fixed;
+	left:0px;
+	/*top:0px;*/
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	padding-left: 25px;
+	padding-top: 50px;
+	text-align: center;
+}
+nav h1{
+	line-height:1.7em;
+	text-align: center;
+}
+nav hr{
+	width:60%;
+	margin-top:1em;
+	border-color:#7a7a7a;
+	border-style:solid;
+}
+nav li{
+	line-height:1.5em;
+	font-size: 0.65em;
+	text-align: center;
+}
+nav .menu-section{
+	padding-bottom: 20px;
+}
+nav .short-bio{
+	font-size: 0.65em;
+	/*padding-top:20px;*/
+}
+
+/*Link styling for nav*/
+a:link{
+	color:#000000;
+	text-decoration: none;
+}
+a:visited{
+	color:#000000;
+	text-decoration: none;
+}
+a:hover{
+	color:#000000;
+	text-decoration: underline;
+}
+a:active{
+	color:#000000;
+}
+/*Text post stuff*/
+.container#text-post{
+	padding:0px 10px;
+	line-height: 1.25em;
+}
+.text-post-title{
+	line-height: 1.5em;
+	font-size: 2.3em;
+}
+#text-post p{
+	margin-bottom:20px;
+}
+.container#text-post img{
+	max-width:95%;
+	position:inherit;
+	margin: 20px 0px;
+}
+.container#text-post figure{
+	/*max-width: 95%;*/
+}
+.container#text-post figure img{
+	margin-bottom: 0px;
+	max-width: 100%;
+	display: block;
+}
+.container#text-post figure figcaption{
+	background-color: #D0D0D0;
+	line-height: 2em;
+	padding:10px;
+}
+.container#text-post figure{
+	margin-bottom: 20px;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 619px) {
+	nav{
+		width:100%;
+		z-index: 1000;
+		background-color: #fafafa;
+		height:60px;
+		padding-top: 30px;
+		padding-right: 0px;
+		padding-left:0px;
+	}
+	nav h1{
+		font-size:0.7em;
+		display: inline;
+		font-weight: bold;
+		width: 50%;
+		padding-left: 25%;
+	}
+	nav .menu-toggle{
+		font-size:0.7em;
+		display: inline-block;
+		font-weight: bold;
+		float: right;
+		padding-right: 50px;
+		padding-top: 5px;
+	}
+	.container{
+		left:0;
+		width:100%;
+		top:15px;
+	}
+	.container img {
+		padding-top: 50px;
+
+	}
+	
+	.img-description-content{
+		padding-top: 25px;
+	}
+	.container .img-description:hover{
+        	margin-top: 70px;
+	}
+
+	.container#text-post{
+		width:95%;
+		margin: 0 auto;
+		padding-top: 50px;
+	}
+	nav .short-bio,nav ul, nav hr{
+		display: none;
+	}
+	nav hr{
+		width:100%;
+		padding:0;
+		margin:30px 0px;
+	}
+	ul.menu-section {
+		padding-bottom: 30px;
+	}
+}
+@media only screen and (min-width: 620px){
+	nav{
+		width: 30%;
+	}
+	nav .short-bio,nav ul, nav hr{
+		display: block;
+	}
+	nav .menu-toggle{
+		display: none;
+	}
+	.container{
+		width:70%;
+		left:30%;
+	}
+	.container#text-post{
+		width:65%;
+	}
+	nav h1{
+		font-size: 1.1em;
+	}
+	nav #open-menu{
+		display: none;
+	}
+}
+@media only screen and (min-width: 750px){
+	nav{
+		width:30%;
+	}
+	.container{
+		width:70%;
+		left:30%;
+	}
+	nav h1{
+		font-size: 1.2em;
+		line-height: 1.4em;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.container {
+		width: 80%;
+		left: 20%;
+	}
+
+	nav {
+		width: 20%;
+	}
+
+	nav h1{
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+}
+
+@media only screen and (min-width: 1001px){
+	.container {
+		width: 60%;
+		height: 50px;
+		left:350px;
+	}
+	.container#text-post{
+		width: 60%;
+		height: 50px;
+		left:350px;
+		max-width: 700px;
+		padding-top:20px;
+	}
+	nav {
+		width: 300px;
+		position: fixed;
+		left: 0px;
+	}
+	nav h1 {
+		line-height: 1.7em;
+	}
+	.text-post-title {
+		line-height: 1.5em;
+		font-size: 2.3em;
+	}
+}

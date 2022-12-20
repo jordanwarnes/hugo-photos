@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container photo-grid">
+    {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+        <article>
+            <img src="{{.Params.imgPostUrl}}"><br>
+            <div class="img-description">
+                <div class="img-description-content">
+                    <h4>{{.Title}}</h4>
+                </div>
+            </div>
+        </article>
+    {{end}}
+</div>
+{{end}}

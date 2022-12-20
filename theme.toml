@@ -1,0 +1,8 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Photo_theme"
+license = "MIT"
+licenselink = "https://codeberg.org/jordie/hugo-photos/blob/main/LICENSE"
+description = "A simple, responsive photo grid theme"
+homepage = "http://example.com/"
