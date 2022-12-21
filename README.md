@@ -8,7 +8,7 @@
 ### Installation
 Firstly you need to initialise this repo in the `themes` directory of your hugo site:
 ```
-$ git submodule add https://codeberg.org/jordie/hugo-photos themes/hugo-photos
+$ git submodule add https://github.com/jordanwarnes/hugo-photos themes/hugo-photos
 ```
 Then specify `hugo-photos` as your theme by adding the following line in your `config.toml` file
 ```
